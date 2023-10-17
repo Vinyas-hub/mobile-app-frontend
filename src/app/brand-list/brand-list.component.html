@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+  <div *ngIf="brands">
+    <div class="brand-cards">
+      <div *ngFor="let brand of brands" class="card" (click)="showProducts(brand.name)">
+        <span>{{ brand.name }}</span>
+        <p class="brand-para">Mobile phones</p>
+        <i class="fas fa-trash-alt" (click)="deleteBrand(brand.id)"></i>
+      </div>
+  
+    </div>
+  </div>
+  

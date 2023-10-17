@@ -1,0 +1,95 @@
+/* .product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+  border: 3px solid #000000;
+  padding: 12px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #8c96f6;
+}
+.product-table tbody tr:hover {
+  background-color: #c6f4f3; 
+}
+
+.product-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.product-table button:hover {
+  background-color: #0056b3;
+} */
+/* CSS for the product table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 20px 9px 29px;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* CSS for the buttons */
+/* .product-table button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+} */
+
+.product-table button:hover {
+  background-color: #0056b3; /* Darker blue on hover, you can change this */
+}
+
+/* Optional: Add font-awesome icon styles */
+.product-table button i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Center the icons vertically */
+.product-table button i.fa-pen-to-square, .product-table button i.fa-trash {
+  vertical-align: middle;
+}
+.edit-button {
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.delete-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: #dc3545; 
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}

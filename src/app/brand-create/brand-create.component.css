@@ -1,0 +1,72 @@
+.brand-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 100px auto;
+  }
+  
+  .brand-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .brand-header h2 {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .brand-group {
+    margin-bottom: 20px;
+  }
+  
+  .brand-label {
+    font-weight: bold;
+  }
+  
+  .brand-control {
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .brand-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-create-brand {
+    background-color: #007bff; 
+    color: #fff;
+  }
+  
+  .btn-create-brand:hover {
+    background-color: #0000ff; 
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-container button {
+    margin-top: 10px; 
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .required {
+    color: red;
+    margin-left: 4px; 
+  }

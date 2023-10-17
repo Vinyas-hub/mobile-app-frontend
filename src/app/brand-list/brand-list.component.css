@@ -1,0 +1,86 @@
+/* CSS for Brand Cards */
+.brand-headding {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.brand-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+.card {
+  border: 4px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #5e5e5e;
+  cursor: pointer;
+  width: 243px;
+  height: 123px;
+}
+.card span {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.card[_ngcontent-ng-c3374628362] span[_ngcontent-ng-c3374628362] {
+  font-weight: bold;
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  color: white;
+}
+.brand-para {
+  font-size: 14px;
+  margin-top: 13px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  .brand-headding{
+    display: flex;
+    justify-content: center;
+    color: #d6e5f3;
+  }
+  .navbar {
+  
+    display: flex;
+     justify-content: center; 
+    background-color: #000000;
+    padding: 5px 0;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 300px;
+  }
+  .fas{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: white
+  }

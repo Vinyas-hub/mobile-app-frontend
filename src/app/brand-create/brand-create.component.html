@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="brand-container">
+  <div class="brand-header">
+    <h2>Create Brand</h2>
+  </div>
+  <div class="brand-body">
+    <div class="brand-group">
+      <label class="brand-label" for="name">Brand Name<span class="required">*</span></label>
+      <input id="name" class="brand-control" [(ngModel)]="newBrand.name" required />
+      <div *ngIf="!newBrand.name.trim()" style="color: red;">Brand Name is required.</div>
+    </div>
+    <div class="button-container">
+      <button class="brand-button btn-create-brand" (click)="createBrand()">Create Brand</button>
+    </div>
+  </div>
+</div>

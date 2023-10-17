@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="form-container" *ngIf="product">
+  <div class="form-header">
+    <h2>Edit Product Form</h2>
+  </div>
+  <div class="form-body">
+    <div>
+      <label for="code">Product Code:</label>
+      <input class="form-control" id="code" [(ngModel)]="product.code" required />
+      <div *ngIf="!product.code.trim()" style="color: red;">Product Code is required.</div>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <input class="form-control" id="description" [(ngModel)]="product.description" required />
+      <div *ngIf="!product.description.trim()" style="color: red;">Description is required.</div>
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input class="form-control" id="price" type="number" [(ngModel)]="product.price" required />
+      <div *ngIf="!product.price" style="color: red;">Price is required.</div>
+    </div>
+    <div>
+      <label for="stock">Stock:</label>
+      <input class="form-control" id="stock" type="number" [(ngModel)]="product.stock" required />
+      <div *ngIf="!product.stock" style="color: red;">Stock is required.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="brand">Brand:</label>
+      <select id="brand" class="form-control" [(ngModel)]="product.idBrand" required>
+        <option *ngFor="let brand of brands" [value]="brand.id">{{ brand.name }}</option>
+      </select>
+      <div *ngIf="!product.idBrand" style="color: red;">Brand is required.</div>
+    </div>
+    <div class="button-container">
+      <button class="btn btn-primary" (click)="saveChanges()">Save Changes</button>
+    </div> 
+  </div>
+</div>
+
+

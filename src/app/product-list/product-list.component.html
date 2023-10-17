@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div *ngIf="products">
+  <table class="product-table"> 
+   
+      <thead>
+        <tr>
+          <th>Product Id</th>
+          <th>Code</th>
+          <th>Brand</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Stock</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.code }}</td>
+          <td>{{ product.brand }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.stock }}</td>
+       
+          <td>
+            <button (click)="editProduct(product.id)" class="edit-button"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button (click)="deleteProduct(product.id)" class="delete-button"><i class="fa-solid fa-trash"></i></button> 
+          </td>
+          
+        </tr>
+    
+      </tbody>
+    </table>
+   
